@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.Date;
 
+
 public class Aula {
-    static private int contadorId = 0;
+    private static int contadorId = 0;
     private int idAula;
     private String objetivo;
     private Date data;
@@ -57,6 +58,7 @@ public class Aula {
 
     @Override
     public String toString() {
+        // TODO: formatar a saída da data no formato dd/MM/yyyy
         return "Aula" +
                 "idAula=" + idAula +
                 "\nobjetivo='" + objetivo + '\'' +

@@ -1,5 +1,5 @@
 public class Recurso {
-    static private int contadorId = 1001;
+    private static int contadorId = 1001;
     private int idRecurso;
     private String descricao;
     private char tipo;
@@ -32,10 +32,10 @@ public class Recurso {
 
     @Override
     public String toString() {
-        return "\nRecurso" +
-                "\nidRecurso = " + idRecurso +
-                "\ndescricao ='" + descricao + '\'' +
-                "\ntipo      = " + tipo;
+        return "\n\n| Recurso" +
+                "\n| idRecurso = " + idRecurso +
+                "\n| descricao ='" + descricao + '\'' +
+                "\n| tipo      = " + tipo;
     }
 }
 
