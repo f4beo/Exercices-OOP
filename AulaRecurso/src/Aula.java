@@ -60,9 +60,9 @@ public class Aula {
     public String toString() {
         // TODO: formatar a saída da data no formato dd/MM/yyyy
         return "Aula" +
-                "idAula=" + idAula +
-                "\nobjetivo='" + objetivo + '\'' +
-                "\ndata=" + data +
-                "\nrecursos=" + recursos;
+                "\n |ID      :" + idAula +
+                "\n |Objetivo:'" + objetivo + '\'' +
+                "\n |Data    :" + data +
+                "\n |Recursos: " + recursos;
     }
 }

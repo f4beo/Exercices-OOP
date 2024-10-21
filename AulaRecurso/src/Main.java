@@ -124,7 +124,8 @@ public class Main {
                         break;
                     }
                     if (!aula.getRecursos().contains(recurso)){
-
+                        System.out.println("Recurso não está na lista de recursos da aula ou já foi excluido!");
+                        System.out.println("==========================================================");
                     }
                     aula.removerRecurso(recurso);
                     System.out.println("Recurso Excluido");
@@ -132,7 +133,15 @@ public class Main {
                     break;
                 case 5:
                     System.out.println("5)Consultar aula");
-                    // TODO: logica de consulta de aula
+                    System.out.println("Digite o ID da aula: ");
+                    id = sc.nextInt();
+                    aula = pesquisarIdAula(a, id);
+                    if (aula == null) {
+                        System.out.println("Aula não encontrada!");
+                        System.out.println("==========================================================");
+                        break;
+                    }
+                    System.out.println(aula);
                     System.out.println("==========================================================");
                     break;
                 case 6:
@@ -177,6 +186,7 @@ public class Main {
             }
         }
         return null;
+
     }
 
     public static Recurso pesquisarIdRecurso(ArrayList<Recurso> r, int id){
