@@ -1,5 +1,5 @@
 public class Recurso {
-    private static int contadorId = 1001;
+    private static int contadorId = 1000;
     private int idRecurso;
     private String descricao;
     private char tipo;
