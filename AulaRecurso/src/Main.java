@@ -75,7 +75,7 @@ public class Main {
 
                 case 3:
                     System.out.println("3) Registrar recurso em aula");
-                    System.out.println("Digite o ID da aula: ");
+                    System.out.print("Digite o ID da aula: ");
                     id = sc.nextInt();
                     aula = pesquisarIdAula(a, id);
                     if (aula == null) {
@@ -105,7 +105,7 @@ public class Main {
 
                 case 4:
                     System.out.println("4)Remover recurso em aula");
-                    System.out.println("Digite o ID da aula: ");
+                    System.out.print("Digite o ID da aula: ");
                     id = sc.nextInt();
                     aula = pesquisarIdAula(a, id);
                     if (aula == null) {
@@ -133,7 +133,7 @@ public class Main {
                     break;
                 case 5:
                     System.out.println("5)Consultar aula");
-                    System.out.println("Digite o ID da aula: ");
+                    System.out.print("Digite o ID da aula: ");
                     id = sc.nextInt();
                     aula = pesquisarIdAula(a, id);
                     if (aula == null) {
@@ -146,7 +146,7 @@ public class Main {
                     break;
                 case 6:
                     System.out.println("6) Excluir Aula");
-                    System.out.println("Digite o ID da aula: ");
+                    System.out.print("Digite o ID da aula: ");
                     id = sc.nextInt();
                     aula = pesquisarIdAula(a, id);
                     if (aula == null) {
