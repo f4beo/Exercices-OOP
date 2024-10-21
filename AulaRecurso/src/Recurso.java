@@ -32,10 +32,10 @@ public class Recurso {
 
     @Override
     public String toString() {
-        return "\n\n| Recurso" +
-                "\n| idRecurso = " + idRecurso +
-                "\n| descricao ='" + descricao + '\'' +
-                "\n| tipo      = " + tipo;
+        return "\n\n|           Recurso" +
+                "\n|           idRecurso = " + idRecurso +
+                "\n|           descricao ='" + descricao + '\'' +
+                "\n|           tipo      = " + tipo;
     }
 }
 
