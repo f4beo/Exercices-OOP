@@ -141,7 +141,7 @@ public class Main {
                         System.out.println("==========================================================");
                         break;
                     }
-                    System.out.println(aula);
+                    mostrarDados(aula);
                     System.out.println("==========================================================");
                     break;
                 case 6:
@@ -196,5 +196,20 @@ public class Main {
             }
         }
         return null;
+    }
+    
+    public static void mostrarDados(Aula aula) {
+    	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    	String dataFormatada = sdf.format(aula.getData());
+    	System.out.println("\n |ID        : " + aula.getIdAula() +
+    			           "\n |Objetivo  : " + aula.getObjetivo() +
+    			           "\n |Data      : " + dataFormatada +
+    			           "\n | Recursos : ");
+    	for(Recurso recurso : aula.getRecursos()) {
+    		System.out.println("\n   >ID        : " + recurso.getIdRecurso() +
+    				           "\n   >Descrição : " + recurso.getDescricao());
+    		
+    	}
+
     }
 }
