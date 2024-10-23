@@ -186,7 +186,6 @@ public class Main {
             }
         }
         return null;
-
     }
 
     public static Recurso pesquisarIdRecurso(ArrayList<Recurso> r, int id){
@@ -201,15 +200,14 @@ public class Main {
     public static void mostrarDados(Aula aula) {
     	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     	String dataFormatada = sdf.format(aula.getData());
-    	System.out.println("\n |ID        : " + aula.getIdAula() +
-    			           "\n |Objetivo  : " + aula.getObjetivo() +
-    			           "\n |Data      : " + dataFormatada +
+    	System.out.println("\n | ID        : " + aula.getIdAula() +
+    			           "\n | Objetivo  : " + aula.getObjetivo() +
+    			           "\n | Data      : " + dataFormatada +
     			           "\n | Recursos : ");
     	for(Recurso recurso : aula.getRecursos()) {
     		System.out.println("\n   >ID        : " + recurso.getIdRecurso() +
-    				           "\n   >Descrição : " + recurso.getDescricao());
-    		
-    	}
-
+    				           "\n   >Descrição : " + recurso.getDescricao() +
+    				           "\n   >Tipo      : " + recurso.getTipo());
+    	}	
     }
 }
