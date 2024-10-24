@@ -58,7 +58,6 @@ public class Aula {
 
     @Override
     public String toString() {
-        // TODO: formatar a saída da data no formato dd/MM/yyyy
         return "Aula" +
                 "\n |ID      :" + idAula +
                 "\n |Objetivo:'" + objetivo + '\'' +

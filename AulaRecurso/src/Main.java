@@ -160,10 +160,9 @@ public class Main {
                     break;
                 case 7:
                     System.out.println("7) Listar aulas");
+                    System.out.println("Aula| ID |   Data   |     Objetivo     |");
                     for (Aula aula1 : a){
-                        System.out.println("\n>ID       :" + aula1.getIdAula());
-                        System.out.println(">Data     :" + sdf.format(aula1.getData()));
-                        System.out.println(">Objetivo :" + aula1.getObjetivo());
+                        System.out.printf("    |%4d|%10s|%18s|\n", aula1.getIdAula(), sdf.format(aula1.getData()), aula1.getObjetivo());
                     }
                     System.out.println("==========================================================");
                     break;
@@ -204,10 +203,9 @@ public class Main {
     			           "\n | Objetivo  : " + aula.getObjetivo() +
     			           "\n | Data      : " + dataFormatada +
     			           "\n | Recursos : ");
+    	System.out.println("   [Recurso |idRecurso|     descricao     |tipo|");
     	for(Recurso recurso : aula.getRecursos()) {
-    		System.out.println("\n   >ID        : " + recurso.getIdRecurso() +
-    				           "\n   >Descrição : " + recurso.getDescricao() +
-    				           "\n   >Tipo      : " + recurso.getTipo());
+    		System.out.printf("   [        |%9d|%19s|%4c|\n", recurso.getIdRecurso(), recurso.getDescricao(), recurso.getTipo());
     	}	
     }
 }
